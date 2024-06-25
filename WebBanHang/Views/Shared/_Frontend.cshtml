@@ -51,8 +51,8 @@
 
             <partial name="_LoginPartial" />
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" name="searchTerm" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" asp-area="Customer" asp-controller="Cart" asp-action="Search" type="submit">Search</button>
             </form>
             <form class="ml-2 d-flex">
                 <button class="btn btn-outline-dark" asp-action="Index" asp-controller="Cart" type="submit">

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Product Search";
+    var searchTerm = ViewBag.SearchTerm;
+}
+
+<p>Tìm kiếm cho: @searchTerm</p>
+
+@if (!string.IsNullOrEmpty(searchTerm))
+{
+    <p>Kết quả tìm kiếm cho: <strong>@searchTerm</strong></p>
+}
+else
+{
+    <p>Không có kết quả tìm kiếm</p>
+}

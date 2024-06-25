@@ -20,7 +20,10 @@ namespace WebBanHang.Areas.Customer.Controllers
             _db = db;
         }
 
-
+        public IActionResult Search(string searchTerm)
+        {
+            return RedirectToAction("Productsearch", "ProductSearch", new { searchTerm , area = "Customer" });
+        }
         //hiển thị giỏ hàng
 
         public IActionResult Index()
